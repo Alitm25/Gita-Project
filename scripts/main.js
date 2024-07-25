@@ -1,7 +1,5 @@
 import { table, removeTable, saveToStorage, viewTable, editTable } from "../data/table.js";
 
-showTable(table);
-
 const addBtn = document.querySelector('.add-button');
 const backDrop = document.querySelector('.backdrop');
 const addModal = document.querySelector('.add-modal-container');
