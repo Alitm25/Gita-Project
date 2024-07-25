@@ -1,5 +1,16 @@
 export let table = JSON.parse(localStorage.getItem('table'));
 
+if (!table) {
+    table = [
+        {
+            id: table.length,
+            name: "خالی",
+            lastName: "خالی",
+            code: "خالی" 
+        }
+    ]
+};
+
 export function removeTable(infoCode) {
     let newTable = [];
 
