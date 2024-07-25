@@ -4,9 +4,9 @@ if (!table) {
     table = [
         {
             id: table.length,
-            name: "خالی",
-            lastName: "خالی",
-            code: "خالی" 
+            name: "علی",
+            lastName: "پورقلی",
+            code: "۶۹۳۰۰۱۸۲۸۷" 
         }
     ]
 };
