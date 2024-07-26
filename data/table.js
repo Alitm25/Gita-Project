@@ -3,7 +3,7 @@ export let table = JSON.parse(localStorage.getItem('table'));
 if (table = []) {
     table = [
         {
-            id: '1',
+            id: table.length,
             name: "علی",
             lastName: "پورقلی",
             code: "۶۹۳۰۰۱۸۲۸۷" 
