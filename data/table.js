@@ -1,15 +1,15 @@
 export let table = JSON.parse(localStorage.getItem('table'));
+
 if (!table) {
-    table = JSON.stringify(        
-        {
-            id: '1',
-            name: "علی",
-            lastName: "پورقلی",
-            code: "۶۹۳۰۰۱۸۲۸۷" 
-        })
-        localStorage.setItem('table', table));
+    data = JSON.stringify(
+        { id: '1',
+          name: "علی",
+          lastName: "پورقلی",
+          code: "۶۹۳۰۰۱۸۲۸۷" }
+    );
+    localStorage.setItem('table', table);
 } else {
-    table = JSON.parse(localStorage.getItem('table'));
+    table = JSON.parse(table);
 }
 
 export function removeTable(infoCode) {
