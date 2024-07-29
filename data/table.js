@@ -1,12 +1,12 @@
 export let table = JSON.parse(localStorage.getItem('table'));
 
 if (!table) {
-    table = [
+    table = [ 
         {
-        id: table.length + 1,
-        name: 'علی',
-        lastName: 'پورقلی',
-        code: '۶۹۳۰۰۱۸۲۸۷'
+            id: '1',
+            name: 'علی',
+            lastName: 'پورقلی',
+            code: '۶۹۳۰۰۱۸۲۸۷'
         }
     ];
 }
