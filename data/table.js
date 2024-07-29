@@ -1,6 +1,5 @@
 export let table = JSON.parse(localStorage.getItem('table'));
-
-if (table = []) {
+if (!table) {
     table = [
         {
             id: table.length + 1,
@@ -8,7 +7,7 @@ if (table = []) {
             lastName: "پورقلی",
             code: "۶۹۳۰۰۱۸۲۸۷" 
         }
-    ]
+    ];
 }
 
 export function removeTable(infoCode) {
