@@ -1,13 +1,16 @@
 export let table = JSON.parse(localStorage.getItem('table'));
-if (table === undefined) {
-    table = [
+if (!table) {
+    table = JSON.stringify(
         {
             id: table.length + 1,
             name: "علی",
             lastName: "پورقلی",
             code: "۶۹۳۰۰۱۸۲۸۷" 
         }
-    ];
+        localStorage.setItem('table', table);
+    );
+} else {
+    table = JSON.parse(localStorage.getItem('table'));
 }
 
 export function removeTable(infoCode) {
