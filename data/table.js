@@ -2,7 +2,7 @@ export let table = JSON.parse(localStorage.getItem('table'));
 if (!table) {
     table = JSON.stringify(
         {
-            id: table.length + 1,
+            id: '1',
             name: "علی",
             lastName: "پورقلی",
             code: "۶۹۳۰۰۱۸۲۸۷" 
