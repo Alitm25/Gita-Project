@@ -8,7 +8,7 @@ if (!table) {
         lastName: 'پورقلی',
         code: '۶۹۳۰۰۱۸۲۸۷'
         }
-    ]
+    ];
 }
 
 export function removeTable(infoCode) {
