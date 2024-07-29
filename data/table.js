@@ -1,4 +1,4 @@
-export let table;
+export let table = JSON.parse(localStorage.getItem('table'));
 
 if (!table) {
     table = [
@@ -9,8 +9,6 @@ if (!table) {
             code: "۶۹۳۰۰۱۸۲۸۷" 
         }
     ]
-} else {
-    talbe = JSON.parse(localStorage.getItem('table'));
 }
 
 export function removeTable(infoCode) {
