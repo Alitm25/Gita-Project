@@ -6,7 +6,7 @@ if (!table) {
             name: "علی",
             lastName: "پورقلی",
             code: "۶۹۳۰۰۱۸۲۸۷" 
-        }
+        })
         localStorage.setItem('table', table));
 } else {
     table = JSON.parse(localStorage.getItem('table'));
